@@ -26,7 +26,7 @@ This setup simulates a small enterprise network for practicing system administra
 
 ## Lab Network Diagram
 
-![Network Diagram showing DC01 Windows Server, CLIENT01 Windows 11, LINUX01 Ubuntu Server, connected via NAT gateway 192.168.100.1](network-diagram.png)
+![Network Diagram showing DC01 Windows Server, CLIENT01 Windows 11, LINUX01 Ubuntu Server, connected via NAT gateway 192.168.100.1](Network-diagram.png)
 
 > This diagram shows basic connectivity and IP assignments. Later you can replace it with a graphical diagram if desired.
 
