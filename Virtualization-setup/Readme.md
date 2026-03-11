@@ -15,7 +15,7 @@ This setup simulates a small enterprise network for practicing system administra
 
 ---
 
-## Network Overview
+## Network
 
 - Network: 192.168.100.0/24  
 - Gateway / NAT: 192.168.100.1  
@@ -24,4 +24,17 @@ This setup simulates a small enterprise network for practicing system administra
 
 ---
 
-## Lab Network Diagram (ASCII Version)
+## Lab Network Diagram
+
+![Network Diagram showing DC01 Windows Server, CLIENT01 Windows 11, LINUX01 Ubuntu Server, connected via NAT gateway 192.168.100.1](network-diagram.png)
+
+> This diagram shows basic connectivity and IP assignments. Later you can replace it with a graphical diagram if desired.
+
+---
+
+## Notes / Best Practices
+
+- Take a **snapshot** of each VM before starting a lab.  
+- Document any changes to VM configurations in this folder.  
+- Keep DNS pointing to DC01 for smooth domain operations.  
+- This setup is the foundation for all labs in this repository (Active Directory, file shares, group policy, Linux administration, etc.).
