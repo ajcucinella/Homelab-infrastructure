@@ -1,11 +1,27 @@
-# Virtualization Setup
+# Virtualization and Network Setup
 
-This section documents the virtualization environment used for the homelab.
+This folder documents the base lab environment, including virtual machines, IP addresses, and network layout.  
+This setup simulates a small enterprise network for practicing system administration and networking.
 
-Software used:
-VMware Workstation Player
+---
 
-Planned virtual machines:
-DC01 – Windows Server domain controller
-CLIENT01 – Windows 11 workstation
-LINUX01 – Ubuntu server
+## Virtual Machines
+
+| VM Name   | OS                  | Role                        | IP Address       |
+|----------|-------------------|-----------------------------|----------------|
+| DC01     | Windows Server 2022 | Domain Controller / DNS     | 192.168.100.10 |
+| CLIENT01 | Windows 11         | Domain-joined client        | 192.168.100.20 |
+| LINUX01  | Ubuntu Server      | Linux server / SSH access   | 192.168.100.30 |
+
+---
+
+## Network Overview
+
+- Network: 192.168.100.0/24  
+- Gateway / NAT: 192.168.100.1  
+- DC01 serves as the primary DNS server for all clients  
+- All VMs on the same network to allow internal communication  
+
+---
+
+## Lab Network Diagram (ASCII Version)
